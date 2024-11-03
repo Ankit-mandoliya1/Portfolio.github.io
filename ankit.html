@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Important Owl stylesheet -->
+        <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+        
+        <!-- Default Theme -->
+        <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+        
+        <!--  jQuery 1.7+  -->
+        <script src="jquery-1.9.1.min.js"></script>
+        
+        <!-- Include js plugin -->
+        <script src="assets/owl-carousel/owl.carousel.js"></script>
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />     
+
+        <style>
+          *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+          }
+          .container-fluid{
+            background: #f6fbfe;
+            height: auto;
+            padding: auto;
+            justify-content: center !important;
+            display: flex;
+            align-items: center;
+            padding: 90px 0 90px 0;
+          }
+          .header1 p:nth-child(1){
+            font-size: 20px;
+            margin-bottom: 0 !important;
+          }
+          .header1 p:nth-child(2){
+            font-size: 50px;
+            
+          }
+          .header1 p:nth-child(3){
+            font-size: 50px;
+            font-weight: bold;
+          }
+          .header1 p:nth-child(4){
+            font-size: 18px;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-weight: normal;
+            text-align: justify;
+          }
+          #typewriter-text {
+
+            font-size: 30px;
+            white-space: nowrap;
+            font-weight: bold;
+
+        }
+        .skill{
+          font-size:30px !important;
+        }
+        .btn-primary {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: blueviolet;
+        --bs-btn-border-color: none;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #0b5ed7;
+        --bs-btn-hover-border-color: #0a58ca;
+        --bs-btn-focus-shadow-rgb: 49, 132, 253;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: #0a58ca;
+        --bs-btn-active-border-color: #0a53be;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #fff;
+        --bs-btn-disabled-bg: #0d6efd;
+        --bs-btn-disabled-border-color: #0d6efd;
+      }
+      #owl-demo .item{
+        margin: 3px;
+      }
+      #owl-demo .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+
+      @media (min-width: 992px) {
+          .navbar-expand-lg .navbar-nav {
+              flex-direction: row;
+              font-size: 20px;
+              /* display: flex; */
+              color: #8a2be2;
+              font-weight: bold;
+              text-transform: uppercase;
+          }
+
+
+
+      }
+      @media only screen and (max-width: 768px){
+
+          .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--bs-navbar-active-color);
+    background: #5959ff;
+    border-radius: 20px;
+    width: max-content;
+    padding: 10px 20px;
+}
+       
+
+      }
+      .navbar-nav {
+          --bs-nav-link-padding-x: 0;
+          --bs-nav-link-padding-y: 0.5rem;
+          --bs-nav-link-font-weight: ;
+          --bs-nav-link-color: rgb(138 43 226);
+          --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+          --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+          display: flex;
+          flex-direction: column;
+          padding-left: 0;
+          margin-bottom: 0;
+          list-style: none;
+      }
+      .nav-item {
+        padding: 0 30px 0 0;
+      }
+      .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: rgb(255 249 249);
+    background: #5959ff;
+    border-radius: 20px;
+}
+      .carousel{
+        background:#d3eafa;
+        padding: 50px 0;
+      }
+      #scrollspyHeading2{
+        text-transform: uppercase;
+        padding: 0 0 60px 0;
+      }
+     
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+            
+            <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light bg-white px-3 fixed-top">
+              <div class="container">
+                  <!-- Logo -->
+                  <a class="navbar-brand" href="#">
+                      <img src="images/logo.png" alt="Logo" style="height: 50px;">
+                  </a>
+                  
+                  <!-- Toggle button for mobile view -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+          
+                  <!-- Navbar Links -->
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav mx-auto">
+                          <li class="nav-item ">
+                              <a class="nav-link" href="#scrollspyHeading1">Home</a>
+                          </li>
+                          <li class="nav-item ">
+                              <a class="nav-link" href="#scrollspyHeading2">Skill</a>
+                          </li>
+                          <li class="nav-item ">
+                              <a class="nav-link" href="#scrollspyHeading3">Project</a>
+                          </li>
+                          <li class="nav-item ">
+                              <a class="nav-link" href="#scrollspyHeading4">About Me</a>
+                          </li>
+                      </ul>
+                      <button type="button" class="btn btn-primary ms-lg-3">Contact Me</button>
+                  </div>
+              </div>
+          </nav>
+              <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+              <div class="container-fluid header" id="scrollspyHeading1">
+              <div class="container">
+
+                <div class="header1 "style="
+                margin: 30px 0 0 0;
+            " >
+                  
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-6 " style="
+                  align-items: center;
+                  display: flex;
+                  text-transform: capitalize;
+                  
+              ">
+                  <div style="">
+                  <p >Hello, its Me</p>
+                  <p class="h1">Ankit 
+                  <span style="color: blueviolet;">Mandoliya</span></p>
+                  <div class="d-flex">
+                    <p class="skill">I am&nbsp;</p>
+                    <span id="typewriter-text" style="color: blueviolet;"></span>  
+                  </div>   
+                    <p>I use cutting-edge technologies and best practices to create high- performance
+                     web applications that optimized for speed, security and scalability.
+                    </p>
+                    <button type="button" class="btn btn-primary" style="
+                    margin: 30px 0;
+                ">Contact me</button>
+                  </div>
+
+                </div>
+                
+
+
+              <div class="col-12 col-md-6 col-lg-6" style="align-items: center;display: flex;justify-content: end;">
+                <div>
+                  
+
+                <img src="images/digitalankit.png" alt="" class="w-100" style="height: 370px;">
+                
+              </div>
+                
+              </div>
+
+            </div>
+          </div>
+          </div>
+        </header>
+        <main>
+          <div class="carousel" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">  
+        <div class="container">
+          <h4 id="scrollspyHeading2" class="fs-1" >my skills</h4>
+          <div class="owl-carousel owl-theme">
+            
+            <div class="item"><h4><img src="images/Untitled-1.png" alt=""></h4></div>
+            <div class="item"><h4><img src="images/Untitled-1.png" alt=""></h4></div>
+            <div class="item"><h4><img src="images/Untitled-1.png" alt=""></h4></div>
+            <div class="item"><h4><img src="images/Untitled-1.png" alt=""></h4></div>
+            <div class="item"><h4><img src="images/Untitled-1.png" alt=""></h4></div>
+            <div class="item"><h4><img src="images/Untitled-1.png" alt=""></h4></div>
+            <div class="item"><h4><img src="images/Untitled-1.png" alt=""></h4></div>
+            <div class="item"><h4><img src="images/Untitled-1.png" alt=""></h4></div>
+            <div class="item"><h4><img src="images/Untitled-1.png" alt=""></h4></div>
+            <div class="item"><h4><img src="images/Untitled-1.png" alt=""></h4></div>
+            <div class="item"><h4><img src="images/Untitled-1.png" alt=""></h4></div>
+            <div class="item"><h4><img src="images/Untitled-1.png" alt=""></h4></div>
+        </div>
+        </div>
+        </main>
+        <footer>
+            <!-- place footer here -->
+
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+      <script>
+          $(document).ready(async () => {
+              let typewriterText = [
+                  '  Graphic Designer.',
+                  '  Web Designer.',
+
+              ]
+              let index = 0
+              do {
+                  await typeText('#typewriter-text', typewriterText[index])
+                  await new Promise(res => setTimeout(res, 3*100));
+                  await untypeText('#typewriter-text', typewriterText[index])
+                  index += 1
+                  index = index % typewriterText.length
+              } while (true)
+          });
+  
+          function typeText(selector, text) {
+              return new Promise((resolve) => {
+                  let element = $(selector);
+                  let charIndex = 0;
+                  let interval = setInterval(() => {
+                      if (charIndex < text.length) {
+                          element.text(element.text() + text[charIndex]);
+                          charIndex++;
+                      } else {
+                          clearInterval(interval);
+                          resolve();
+                      }
+                  }, 100);  // Adjust typing speed by changing the interval time
+              });
+          }
+  
+          function untypeText(selector, text) {
+              return new Promise((resolve) => {
+                  let element = $(selector);
+                  let charIndex = text.length;
+                  let interval = setInterval(() => {
+                      if (charIndex > 0) {
+                          element.text(element.text().slice(0, -1));
+                          charIndex--;
+                      } else {
+                          clearInterval(interval);
+                          resolve();
+                      }
+                  }, 50);  // Adjust deleting speed by changing the interval time
+              });
+          }
+
+
+</script>
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+</script>
+         
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+          
+            function myFunction(){
+              var x = document.getElementById("myTopnav");
+              if(x.className==="topnav"){
+                x.className += " responsive";
+              }else{
+                x.className = "topnav";
+              }
+            }
+
+        </script>
+    </body>
+</html>
